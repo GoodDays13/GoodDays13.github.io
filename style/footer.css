@@ -1,0 +1,14 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+footer a {
+	margin-left: 1rem;
+}
+
+footer img {
+	width: 2.5rem;
+	aspect-ratio: revert;
+}
