@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kaiden Matuskiewicz Projects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+	<style>
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">Kaiden Matusiewicz</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="skills.html">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<h1 class="text-center">
+		Projects
+	</h1>
+
+	<div class="container" id="tetris">
+		<h2>C Tetris
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/c-tetris">
+				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
+			</a>
+		</h2>
+		<img class="img-fluid mb-3" src="assets/tetris.png" alt="Tetris">
+		<p>
+			A simple Tetris game written in C. I wanted to try something like <a href="#pong">pong</a> but without
+			classes.
+		</p>
+		<p class="mb-0">I used:</p>
+		<ul>
+			<li>C</li>
+			<li>SDL2</li>
+			<li>CMake</li>
+		</ul>
+		<p class="mb-0">What I learned:</p>
+		<ul>
+			<li>More experience with SDL2</li>
+			<li>How to make a game loop without objects</li>
+			<li>How to manually play sound with SDL2</li>
+			<li>How to use CMake</li>
+		</ul>
+	</div>
+
+	<div class="container" id="pong">
+		<h2>C++ Pong
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/cpp-pong">
+				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
+			</a>
+		</h2>
+		<img class="img-fluid mb-3" src="assets/pong.png" alt="Pong">
+		<p>A simple Pong game written in C++. Done before Tetris. My first game attempt without an engine.</p>
+		<p class="mb-0">I used:</p>
+		<ul>
+			<li>C++</li>
+			<li>SDL2</li>
+			<li>Make</li>
+		</ul>
+		<p class="mb-0">What I learned:</p>
+		<ul>
+			<li>How classes work in C++ compared to Java</li>
+			<li>How to use SDL2</li>
+			<li>How to make a game loop</li>
+			<li>How to use Make</li>
+		</ul>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
