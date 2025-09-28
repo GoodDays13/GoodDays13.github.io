@@ -1,0 +1,7 @@
+nav_items:
+  - name: Skills
+    url: /skills.html
+  - name: Projects
+    url: /projects.html
+  - name: About
+    url: /about.html

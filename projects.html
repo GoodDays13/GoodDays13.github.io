@@ -1,191 +1,38 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>Kaiden Matuskiewicz Projects</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-	<link href="style/footer.css" rel="stylesheet">
-	<style>
-	</style>
-</head>
-
-<body>
-	<nav class="navbar navbar-expand">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">Kaiden Matusiewicz</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="skills.html">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<h1 class="text-center">
-		Projects
-	</h1>
-
-	<div class="container" id="speedrunner">
-		<h2>C++ Speedrunner
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/cpp-speedrunner">
-				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
-			</a>
-		</h2>
-		<img class="img-fluid mb-3" src="assets/speedrunner.png" alt="Speedrunner">
-		<p>
-			A currently work-in-progress 2D platformer game I'm making in C++ with SDL3. The concept is that you can
-			change the game speed while playing a level to make it harder but be able to finish the level faster.
-		</p>
-		<p class="mb-0">I used:</p>
-		<ul>
-			<li>C++</li>
-			<li>SDL3</li>
-			<li>CMake</li>
-			<li>GLSL</li>
-		</ul>
-		<p class="mb-0">What I learned:</p>
-		<ul>
-			<li>How to make a graphics pipeline with SDL3 GPU</li>
-			<li>How to write a shader in GLSL</li>
-			<li>How to use C++ classes and its features</li>
-			<li>More experience with making a game loop and game physics</li>
-		</ul>
+---
+layout: default
+title: Projects
+headtitle: Projects
+---
+{% for project in site.data.projects %}
+<div class="container" id="speedrunner">
+	<h2> {{ project.title }}
+		<a target="_blank" rel="noopener noreferrer" href="{{ project.github }}">
+			<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
+		</a>
+	</h2>
+	{% if project.image contains "youtube" %}
+	<div class="ratio ratio-16x9 mb-3">
+		<iframe class="w-100 h-100" src="{{ project.image }}" title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	</div>
-
-	<div class="container" id="tetris">
-		<h2>C Tetris
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/c-tetris">
-				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
-			</a>
-		</h2>
-		<img class="img-fluid mb-3" src="assets/tetris.png" alt="Tetris">
-		<p>
-			A simple Tetris game written in C. I wanted to try something like <a href="#pong">pong</a> but without
-			classes.
-		</p>
-		<p class="mb-0">I used:</p>
-		<ul>
-			<li>C</li>
-			<li>SDL2</li>
-			<li>CMake</li>
-		</ul>
-		<p class="mb-0">What I learned:</p>
-		<ul>
-			<li>More experience with SDL2</li>
-			<li>How to make a game loop without objects</li>
-			<li>How to manually play sound with SDL2</li>
-			<li>How to use CMake</li>
-		</ul>
-	</div>
-
-	<div class="container" id="ss13">
-		<h2>Hexagonal SS13
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/Space-Station-13-Unity">
-				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
-			</a>
-		</h2>
-		<img class="img-fluid mb-3" src="assets/ss13.png" alt="Pong">
-		<p>This is an incomplete project I made in Unity to recreate the niche game SS13 but with hexagonal tiles. This
-			isn't the first Unity project I've made, but the first that I made public.</p>
-		<p class="mb-0">I used:</p>
-		<ul>
-			<li>Unity</li>
-			<li>Universal Render Pipeline</li>
-			<li>C#</li>
-			<li>Visual Studio</li>
-		</ul>
-		<p class="mb-0">What I learned:</p>
-		<ul>
-			<li>How to use Unity</li>
-			<li>How to make a normal map</li>
-			<li>How to use the URP</li>
-		</ul>
-	</div>
-
-	<div class="container" id="scpmod">
-		<h2>SCP 173 Terraria Mod
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/SCPMod">
-				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
-			</a>
-		</h2>
-		<div class="ratio ratio-16x9 mb-3">
-			<iframe class="w-100 h-100" src="https://www.youtube.com/embed/4mwPl24pEeU?si=25xVkgdnd_uDGArt"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</div>
-		<p>
-			This is a Terraria mod I made that adds SCP 173 from the SCP Foundation. It was made using tModLoader and
-			C#.
-		</p>
-		<p class="mb-0">I used:</p>
-		<ul>
-			<li>tModLoader</li>
-			<li>C#</li>
-			<li>Visual Studio</li>
-		</ul>
-		<p class="mb-0">What I learned:</p>
-		<ul>
-			<li>How to use tModLoader</li>
-			<li>More experience with C#</li>
-			<li>How to make custom AI for NPCs</li>
-			<li>A little bit of multiplayer syncing</li>
-		</ul>
-	</div>
-
-	<div class="container" id="pong">
-		<h2>C++ Pong
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13/cpp-pong">
-				<img src="assets/github-mark/github-mark.svg" style="height: .8lh;">
-			</a>
-		</h2>
-		<img class="img-fluid mb-3" src="assets/pong.png" alt="Pong">
-		<p>A simple Pong game written in C++. Done before Tetris. My first game attempt without an engine.</p>
-		<p class="mb-0">I used:</p>
-		<ul>
-			<li>C++</li>
-			<li>SDL2</li>
-			<li>Make</li>
-		</ul>
-		<p class="mb-0">What I learned:</p>
-		<ul>
-			<li>How classes work in C++ compared to Java</li>
-			<li>How to use SDL2</li>
-			<li>How to make a game loop</li>
-			<li>How to use Make</li>
-		</ul>
-	</div>
-
-	<footer class="mt-auto">
-		<div class="container-fluid d-flex justify-content-end pb-3">
-			<a target="_blank" rel="noopener noreferrer" href="mailto:matuskiewk1@mymail.nku.edu">
-				<img src="assets/email-pixel.svg">
-			</a>
-			<a target="_blank" rel="noopener noreferrer" href="https://github.com/GoodDays13">
-				<img src="assets/github-mark/github-mark.svg">
-			</a>
-		</div>
-	</footer>
-
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-		crossorigin="anonymous"></script>
-</body>
-
-</html>
+	{% else %}
+	<img class="img-fluid mb-3" src="{{ project.image }}" alt="{{ project.title }}">
+	{% endif %}
+	<p>
+		{{ project.description }}
+	</p>
+	<p class="mb-0">I used:</p>
+	<ul>
+		{% for tech in project.used %}
+		<li>{{ tech }}</li>
+		{% endfor %}
+	</ul>
+	<p class="mb-0">What I learned:</p>
+	<ul>
+		{% for learn in project.learned %}
+		<li>{{ learn }}</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endfor %}

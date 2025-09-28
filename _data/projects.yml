@@ -1,0 +1,70 @@
+- title: "C++ Speedrunner"
+  description: "A currently work-in-progress 2D platformer game I'm making in C++ with SDL3. The concept is that you can change the game speed while playing a level to make it harder but be able to finish the level faster."
+  image: "assets/speedrunner.png"
+  github: "https://github.com/GoodDays13/cpp-speedrunner"
+  used:
+    - "C++"
+    - "SDL3"
+    - "CMake"
+    - "GLSL"
+  learned:
+    - "How to make a graphics pipeline with SDL3 GPU"
+    - "How to write a shader in GLSL"
+    - "How to use C++ classes and its features"
+    - "More experience with making a game loop and game physics"
+
+- title: "C Tetris"
+  description: "A simple Tetris game written in C. I wanted to try something like <a href=\"#pong\">pong</a> but without classes."
+  image: "assets/tetris.png"
+  github: "https://github.com/GoodDays13/c-tetris"
+  used:
+    - "C"
+    - "SDL2"
+    - "CMake"
+  learned:
+    - "More experience with SDL2"
+    - "How to make a game loop without objects"
+    - "How to manually play sound with SDL2"
+    - "How to use CMake"
+
+- title: "Hexagonal SS13"
+  description: "This is an incomplete project I made in Unity to recreate the niche game SS13 but with hexagonal tiles. This isn't the first Unity project I've made, but the first that I made public."
+  image: "assets/ss13.png"
+  github: "https://github.com/GoodDays13/Space-Station-13-Unity"
+  used:
+    - "Unity"
+    - "Universal Render Pipeline"
+    - "C#"
+    - "Visual Studio"
+  learned:
+    - "How to use Unity"
+    - "How to make a normal map"
+    - "How to use the URP"
+
+- title: "SCP 173 Terraria Mod"
+  description: "This is a Terraria mod I made that adds SCP 173 from the SCP Foundation. It was made using tModLoader and C#."
+  image: "https://www.youtube.com/embed/4mwPl24pEeU?si=25xVkgdnd_uDGArt"
+  github: "https://github.com/GoodDays13/SCPMod"
+  used:
+    - "tModLoader"
+    - "C#"
+    - "Visual Studio"
+  learned:
+    - "How to use tModLoader"
+    - "More experience with C#"
+    - "How to make custom AI for NPCs"
+    - "A little bit of multiplayer syncing"
+
+- title: "C++ Pong"
+  description: "A simple Pong game written in C++. Done before Tetris. My first game attempt without an engine."
+  image: "assets/pong.png"
+  github: "https://github.com/GoodDays13/cpp-pong"
+  used:
+    - "C++"
+    - "SDL2"
+    - "Make"
+  learned:
+    - "How classes work in C++ compared to Java"
+    - "How to use SDL2"
+    - "How to make a game loop"
+    - "How to use Make"
